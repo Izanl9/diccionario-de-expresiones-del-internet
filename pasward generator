@@ -1,0 +1,10 @@
+import random as r
+char='"+-/*!&$#?=@abcçdefghijklmnñopqrstuvwxyzABCÇDEFGHIJKLMNÑOPQRSTUVWXYZ1234567890",.-+¿?¡!|@#~€¬/'
+pasword=''
+while True:
+    long=int(input('ingrese la longitud de contraseña: '))
+    for i in range(long):
+        pasword += r.choice(char)
+    print(pasword)
+    pasword=''
+    long=''
